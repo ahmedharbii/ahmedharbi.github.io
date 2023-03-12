@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 <head>
 	<title>My Website</title>
@@ -8,7 +8,7 @@
 	<header>
 		<nav>
 			<ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -17,21 +17,63 @@
 		</nav>
 	</header>
 	<main>
-		<section class="publications">
-			<h1>Projects</h1>
-			<p>Here is a list of my recent projects:</p>
-			<ul>
-				<li>UJI Butler</li>
-                
-                <li>BlueROV2 Docking using visual servoing on Unity 2022</li>
-                <iframe width="560" height="315" src="https://youtu.be/v4bm29MwCQ8" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-                picture-in-picture" allowfullscreen></iframe>
+		
+		
+<style>
+			
+.video-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.video-item {
+  width: 45%;
+  margin-bottom: 30px;
+}
+.video-item iframe {
+  display: block;
+  width: 70%;
+  height: 400px;
+  margin: 0 auto;
+}
 
-                
-				
-			</ul>
-		</section>
+</style>
+
+
+		<section class="projects">
+			<h2>Recent Projects</h2>
+			<div class="video-wrapper">
+				<div class="video-item">
+				  <h3>UJI Butler</h3>
+				  <p>Sign Language Recognition using YoloV7 to detect hand gestures and give commands to UR5 robot arm to serve coffee. After that, UR5 gives the coffee to kobuki robot to deliver it to the customer.</p>
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/iXYfxaN-TXU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="video-item">
+				  <h3>BlueROV2 Docking using visual servoing on Unity 2022</h3>
+				  <p>Built a whole simulation scenario in Unity using water features,
+					and added a docking station with arucos on the corners, and the BlueROV2, was able to 
+					dock to the docking station using visual servoing.</p>
+				  </p>
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/v4bm29MwCQ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			  </div>
+
+			  <div class="video-wrapper">
+				<div class="video-item">
+				  <h3>RC Aircraft</h3>
+				  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/iXYfxaN-TXU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+				</div>
+				<!-- <div class="video-item">
+				  <h3>BlueROV2 Docking using visual servoing on Unity 2022</h3>
+				  <p>Description of project 2</p>
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/v4bm29MwCQ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div> -->
+			  </div>
+
+		  </section>
+		  
 	</main>
 	<footer>
 		<p>Copyright &copy Ahmed Harbi</p>
