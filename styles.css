@@ -1,13 +1,50 @@
+/*Colors Paletter*/
+:root {
+  /* HEX */
+  --bice-blue: #006ba6ff;
+  --blue-green: #219EBC;
+  --floral-white: #f7f4eaff;
+  --coral: #ff8552ff;
+  --dark-purple: #161032ff;
+  --black: #030301ff;
+  --Prussian-blue: #023047ff;
+  --Selective-yellow: #ffb703;
+
+  /* Palette Number 2 - https://coolors.co/ */
+  --sky-blue: #8ecae6ff;
+  --blue-green: #219ebcff;
+  --prussian-blue: #023047ff;
+  --selective-yellow: #ffb703ff;
+  --ut-orange: #fb8500ff;
+
+
+  /* Gradient */
+  --gradient-top: linear-gradient(0deg, var(--bice-blue), var(--floral-white), var(--coral), var(--dark-purple), var(--black));
+}
+
+
+
 /* set default font and margin for the entire document */
 body {
 	font-family: Arial, sans-serif;
 	margin: 105;
+  /* Example usage */
+  background: var(--prussian-blue);
+  color: var(--selective-yellow);
+  /* border: 0.5px solid var(--coral); */
+  /* box-shadow: 0 0 10px var(--Prussian-blue); */
+  /* text-shadow: 1px 1px 1px var(--black); */
+  /* background-image: var(--gradient-top); */
+  /* background-image: var(--blue-green) */
+
+
 }
 
 /* style the page header */
 header {
-	background-color: #333333;
-	color: #fff;
+	background-color: #862323;
+	/* color: #fff; */
+  color: var(--bice-blue);
 	padding: 1rem;
 }
 
