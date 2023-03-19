@@ -107,6 +107,7 @@ nav a:hover {
 
 /* style the sections titles */
 h1, h2, h3, h4, h5, h6 {
+  display: inline-block;
   background-color: var(--light-cyan);
   color: var(--Prussian-blue);
   border-radius: 4px;
