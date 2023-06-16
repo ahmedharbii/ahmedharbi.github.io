@@ -2,35 +2,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Website</title>
-	<link rel="stylesheet" href="styles.css">
-	<link rel="icon" href="logo.png">
+    <title>Ahmed Harbi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png">
+    <style>
+        .publication {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        
+        .publication-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .publication-details {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .publication-img {
+            max-width: 400px;
+        }
+        
+        .citation {
+            font-style: italic;
+            text-align: left;
+        }
+        
+        .citation strong {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="index.html" class="name">Ahmed Harbi Elsayed</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="publications.html">Publications</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<main>
-		<section class="publications">
-			<h1>Publications</h1>
-			<!-- <p>Here is a list of my recent publications:</p> -->
-			<ul>
-				<li>Design and control of soft biomimetic pangasius fish robot using fin ray effect and reinforcement learning</li>
-				
-			</ul>
-		</section>
-	</main>
-	<footer>
-		<p>Copyright &copy Ahmed Harbi</p>
-	</footer>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="name">Ahmed Harbi Elsayed</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="publications">
+            <h1>Publications</h1>
+            <!-- <p>Here is a list of my recent publications:</p> -->
+            <div class="publication">
+                <h2 class="publication-title">Design and control of soft biomimetic pangasius fish robot using fin ray effect and reinforcement learning</h2>
+                <div class="publication-details">
+                    <img class="publication-img" src="images/publications/pangasius_paper.png" alt="Pangasius fish robot">
+                    <div class="citation">
+                        <p>Youssef, S. M., Soliman, M., Saleh, M. A., <strong> Elsayed, Ahmed H.</strong>, & Radwan, A. G. (2022).</p>
+                        <p>Design and control of soft biomimetic pangasius fish robot using fin ray effect and reinforcement learning.</p>
+                        <p><i>Scientific Reports, 12(1), 21861.</i></p>
+                        <p>Publisher: Nature Publishing Group UK London</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Ahmed Harbi</p>
+    </footer>
 </body>
 </html>
